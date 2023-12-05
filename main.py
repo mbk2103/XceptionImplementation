@@ -1,8 +1,9 @@
 # main.py
-from data_loader import DataLoader
-from data_preprocessor import DataPreprocessor
-from model_builder import ModelBuilder, XceptionBlock
-from trainer import Trainer
+from data.data_loader import DataLoader
+from data.data_preprocessor import DataPreprocessor
+from models.model_builder import ModelBuilder
+from models.xception_block import XceptionBlock
+from trainers.trainer import Trainer
 
 def main():
   x_train, y_train, x_val, y_val, x_test, y_test = DataLoader.load_data()
